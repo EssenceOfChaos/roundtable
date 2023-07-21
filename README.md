@@ -2,20 +2,17 @@
 
 **TODO: Add description**
 
-## Installation
+## System Requirements
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `roundtable` to your list of dependencies in `mix.exs`:
+- Install Erlang `brew install erlang`
+- Install Elixir `brew install elixir`
+- Install Hex package manager: `mix local.hex`
+- Install dependencies with `mix deps.get`
 
-```elixir
-def deps do
-  [
-    {:roundtable, "~> 0.1.0"}
-  ]
-end
-```
+## Instructions
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/roundtable>.
+After pulling down the dependencies with `mix deps.get` run `docker compose up -d` to stand up a mongodb container.
 
+Start the application with `iex -S mix` and use curl or Postman to send a GET request go localhost:8080.
+
+To tear down the container run `docker compose down`.

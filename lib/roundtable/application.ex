@@ -8,8 +8,18 @@ defmodule Roundtable.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Roundtable.Worker.start_link(arg)
-      # {Roundtable.Worker, arg}
+      {Plug.Cowboy,
+       scheme: :http,
+       plug: Roundtable.Router,
+       options: [port: Application.get_env(:roundtable, :port)]},
+      {
+        Mongo,
+        [
+          name: :mongo,
+          database: Application.get_env(:roundtable, :database),
+          pool_size: Application.get_env(:roundtable, :pool_size)
+        ]
+      }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
