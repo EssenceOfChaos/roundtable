@@ -13,6 +13,6 @@
 
 After pulling down the dependencies with `mix deps.get` run `docker compose up -d` to stand up a mongodb container.
 
-Start the application with `iex -S mix` and use curl or Postman to send a GET request go localhost:8080.
+Start the application with `iex -S mix` and use curl or Postman to send a GET request to localhost:8080.
 
 To tear down the container run `docker compose down`.
