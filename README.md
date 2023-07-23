@@ -16,3 +16,5 @@ After pulling down the dependencies with `mix deps.get` run `docker compose up -
 Start the application with `iex -S mix` and use curl or Postman to send a GET request to localhost:8080.
 
 To tear down the container run `docker compose down`.
+
+TODO: `docker-compose.yml` not working, currently running mongodb on localhost instead.
