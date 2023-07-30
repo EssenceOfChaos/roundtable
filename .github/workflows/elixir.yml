@@ -40,7 +40,7 @@ jobs:
         run: mix deps.get
       - name: Create .env file
         run: touch .env
-      - name: MongoDB in GitHub Actions
-        uses: supercharge/mongodb-github-action@1.9.0
+      # - name: MongoDB in GitHub Actions
+      #   uses: supercharge/mongodb-github-action@1.9.0
       - name: Run tests
         run: mix test
