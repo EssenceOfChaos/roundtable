@@ -1,7 +1,5 @@
 # Roundtable
 
-## CI Status
-
 [![.github/workflows/elixir.yml](https://github.com/EssenceOfChaos/roundtable/actions/workflows/elixir.yml/badge.svg)](https://github.com/EssenceOfChaos/roundtable/actions/workflows/elixir.yml)
 
 **TODO: Add description**
