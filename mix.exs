@@ -29,7 +29,11 @@ defmodule Roundtable.MixProject do
       {:plug_cowboy, "~> 2.6.1"},
       {:mongodb_driver, "~> 1.0.0"},
       # Static code analysis
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      # Parse CSV
+      {:nimble_csv, "~> 1.1"},
+      # HTTP client for Elixir
+      {:httpoison, "~> 2.1"}
     ]
   end
 end

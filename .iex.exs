@@ -1,0 +1,1 @@
+alias Roundtable.Exchange.Stocks

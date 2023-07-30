@@ -20,3 +20,18 @@ Start the application with `iex -S mix` and use curl or Postman to send a GET re
 To tear down the container run `docker compose down`.
 
 TODO: `docker-compose.yml` not working, currently running mongodb on localhost instead.
+
+---
+
+## RoundTable.Exchange.Stocks
+
+```elixir
+iex(1)> Stocks.get_quote("IBM")
+%Roundtable.Exchange.Stocks{
+  symbol: "IBM",
+  price: "143.4500",
+  volume: "6686627",
+  change: "0.4800",
+  change_percent: "0.3357%"
+}
+```
